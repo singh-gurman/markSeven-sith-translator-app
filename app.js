@@ -2,7 +2,7 @@ const inputBox = document.querySelector("#input-box");
 const translateBtn = document.querySelector("#btn-translate");
 const outputBox = document.querySelector("#output-box");
 
-const serverUrl = "https://lessonfourapi.tanaypratap.repl.coa.json";
+const serverUrl = "https://api.funtranslations.com/translate/sith.json";
 
 function completeUrl(text) {
   return serverUrl + "?" + "text=" + text;
