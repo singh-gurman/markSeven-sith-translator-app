@@ -21,12 +21,18 @@ function errorHandler(error) {
   alert("The Server is not responding, please try again later!");
 }
 
+function outputStyle() {
+  outputBox.style.background = "#050f23";
+  outputBox.style.border = " 0.2rem solid #e9257b";
+}
+
 function clickHandler() {
   const inputText = inputBox.value;
   fetch(completeUrl(inputText))
     .then(jsonParse)
     .then(showOutput)
     .catch(errorHandler);
+  outputStyle();
 }
 
 translateBtn.addEventListener("click", clickHandler);
