@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Trade Winds", cursive;
+  color: #d5eff4;
+  font-size: 2.4rem;
+}
+
+h1 {
+  color: #d2216f;
+  padding-top: 1.2rem;
+}
+
+h1,
+p {
+  background-color: #071532;
+  text-align: center;
+}
+
+p + p {
+  color: #2dafc9;
+}
+
+.container {
+  background-image: url(img/bg-img.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#input-box,
+#output-box {
+  padding: 1.6rem 0.8rem;
+  font-size: 2rem;
+  color: #d5eff4;
+  border: 0.2rem solid #2dafc9;
+
+  background: none;
+  cursor: text;
+  width: 38rem;
+  height: 8rem;
+  text-align: center;
+  border-radius: 0.6rem;
+  transform: translateY(-50%);
+  margin-right: 2rem;
+}
+
+#input-box {
+  font-family: "Trade Winds", cursive;
+  border: 0.2rem solid #2dafc9;
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+#input-box:not(:placeholder-shown) + #btn-translate {
+  display: block;
+}
+
+#input-box::placeholder {
+  color: #6a7384;
+}
+
+#input-box:focus {
+  outline: none;
+  background-color: #050f23;
+  border: 0.2rem solid #e9257b;
+}
+
+#btn-translate {
+  font-family: "Trade Winds", cursive;
+  font-size: 2.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.6rem 3.6rem;
+  border: 0.3rem solid #39445b;
+  border-radius: 0.6rem;
+  position: absolute;
+  left: 12rem;
+  bottom: 35%;
+  display: none;
+
+  background: linear-gradient(to right top, #6cc7d9, #f066a3);
+}
+
+#btn-translate:hover {
+  color: #061128;
+  border: 0.3rem solid #202c47;
+  background: linear-gradient(to right top, #2dafc9, #eb3b88);
+  text-decoration: underline;
+}
+
+.output-label,
+.input-label {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1.5%;
+  top: 30%;
+}
+
+.input-label {
+  left: 5%;
+}

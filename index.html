@@ -3,14 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
     <title>Sith Translator</title>
   </head>
   <body>
-    <textarea id="input-box" placeholder="Enter the text here"></textarea>
-    <button id="btn-translate">Translate!</button>
-    <div class="output-label">The translation comes here!</div>
-    <div id="output-box"></div>
-
+    <h1>Dealing in Absolutes!</h1>
+    <p>
+      Do you want to deal in absolutes like a Sith Lord but don't know Sith? Not
+      to worry!
+    </p>
+    <p>
+      Our Sith translator translates anything that you enter into the Sith
+      language!
+    </p>
+    <div class="container">
+      <label for="input-box" class="input-label">
+        Your text goes here!
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="#2dafc9"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M229.66,141.66l-96,96a8,8,0,0,1-11.32,0l-96-96A8,8,0,0,1,32,128H72V48A16,16,0,0,1,88,32h80a16,16,0,0,1,16,16v80h40a8,8,0,0,1,5.66,13.66Z"
+          ></path></svg
+      ></label>
+      <textarea
+        id="input-box"
+        placeholder="Enter text to translate..."
+      ></textarea>
+      <button id="btn-translate">Translate!</button>
+      <label for="output-box" class="output-label">
+        The translation comes here!
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="#e9257b"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M229.66,141.66l-96,96a8,8,0,0,1-11.32,0l-96-96A8,8,0,0,1,32,128H72V48A16,16,0,0,1,88,32h80a16,16,0,0,1,16,16v80h40a8,8,0,0,1,5.66,13.66Z"
+          ></path>
+        </svg>
+      </label>
+      <div id="output-box"></div>
+    </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
