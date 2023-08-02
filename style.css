@@ -113,17 +113,3 @@ p + p {
 .input-label {
   left: 5%;
 }
-
-/* #reset-btn {
-  position: absolute;
-  bottom: 35%;
-  right: 12rem;
-  padding: 1.6rem 3.6rem;
-  border-top: 0.3rem solid #2dafc9;
-  border-right: 0.3rem solid #2dafc9;
-  border-bottom: 0.3rem solid #e9257b;
-  border-left: 0.3rem solid #e9257b;
-  background-color: #061128;
-  font-size: 2rem;
-  color:#f7f7f7;
-} */
