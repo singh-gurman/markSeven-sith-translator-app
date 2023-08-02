@@ -31,6 +31,7 @@ p + p {
 
 .container {
   background-image: url(img/bg-img.jpg);
+  background-position: center top -4.5rem;
   min-height: 100vh;
   background-size: cover;
   display: flex;
@@ -52,7 +53,7 @@ p + p {
   height: 8rem;
   text-align: center;
   border-radius: 0.6rem;
-  transform: translateY(-50%);
+  transform: translateY(-150%);
   margin-right: 2rem;
 }
 
@@ -87,7 +88,7 @@ p + p {
   border-radius: 0.6rem;
   position: absolute;
   left: 12rem;
-  bottom: 35%;
+  bottom: 47%;
   display: none;
 
   background: linear-gradient(to right top, #6cc7d9, #f066a3);
@@ -106,9 +107,23 @@ p + p {
   align-items: center;
   position: absolute;
   right: 1.5%;
-  top: 30%;
+  top: 17%;
 }
 
 .input-label {
   left: 5%;
 }
+
+/* #reset-btn {
+  position: absolute;
+  bottom: 35%;
+  right: 12rem;
+  padding: 1.6rem 3.6rem;
+  border-top: 0.3rem solid #2dafc9;
+  border-right: 0.3rem solid #2dafc9;
+  border-bottom: 0.3rem solid #e9257b;
+  border-left: 0.3rem solid #e9257b;
+  background-color: #061128;
+  font-size: 2rem;
+  color:#f7f7f7;
+} */
